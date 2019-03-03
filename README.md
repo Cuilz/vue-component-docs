@@ -1,4 +1,4 @@
-<div align="center" markdown="1" style="text-align:center">
+<div align="left" markdown="1" style="text-align:left">
 
 **Isolated Vue component development environment with a living style guide**
 
