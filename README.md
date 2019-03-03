@@ -16,7 +16,7 @@ npm install --save-dev vue-component-docs
 
 ## 2. 添加配置文件
 
-@hfe/vue-component-docs 默认情况下以项目根目录下的 `styleguide.config.js` 做为配置文件。也可以自定义配置文件名称，再通过 `--config` 参数指定即可。
+vue-component-docs 默认情况下以项目根目录下的 `styleguide.config.js` 做为配置文件。也可以自定义配置文件名称，再通过 `--config` 参数指定即可。
 
 [详细的配置文档](https://vue-styleguidist.github.io/Configuration.html)
 
