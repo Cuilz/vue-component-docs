@@ -46,10 +46,10 @@ function getConfig(config, update) {
 	}
 
 	try {
-    // TODO: use config schemas default or default file to set default value!
     const sanitizedConfig = sanitizeConfig(config, schema, configDir);
-    sanitizedConfig.styleguideComponents = sanitizedConfig.styleguideComponents || {};
-    sanitizedConfig.styleguideComponents.PathlineRenderer = path.join(__dirname, './render/PathlineRenderer.js');
+    sanitizedConfig.styleguideComponents = Object.assign({}, {
+      PathlineRenderer: path.join(__dirname, './render/PathlineRenderer.js')
+    }, sanitizedConfig.styleguideComponents || {});
 
     return sanitizedConfig;
 	} catch (exception) {

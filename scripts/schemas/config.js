@@ -12,6 +12,8 @@ const getUserPackageJson = require('react-styleguidist/scripts/utils/getUserPack
 const StyleguidistError = require('react-styleguidist/scripts/utils/error');
 const findUserWebpackConfig = require('../utils/findUserWebpackConfig');
 const consts = require('../consts');
+const defaultTheme = require('../styles/defaultTheme');
+const defaultStyles = require('../styles/defaultStyles');
 
 module.exports = {
   baseDir: {
@@ -249,7 +251,7 @@ module.exports = {
 	},
 	styles: {
 		type: 'object',
-		default: {},
+		default: defaultStyles,
 		example: {
 			Logo: {
 				logo: {
@@ -275,7 +277,7 @@ module.exports = {
 	},
 	theme: {
 		type: 'object',
-		default: {},
+		default: defaultTheme,
 		example: {
 			link: 'firebrick',
 			linkHover: 'salmon',
